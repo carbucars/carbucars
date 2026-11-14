@@ -1,0 +1,218 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#090909">
+<title>CarbuCars | Mecánica, Motores y Electrónica</title>
+<meta name="description" content="CarbuCars: reparación y reconstrucción de motores, capotas, suspensiones neumáticas, diagnosis y electrónica del automóvil. Alicante y Murcia.">
+<style>
+:root{--red:#ed101d;--black:#090909;--grey:#171717;--white:#fff}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--black);color:white;font-family:Arial,Helvetica,sans-serif}
+a{color:inherit;text-decoration:none}
+header{background:#080808;border-bottom:1px solid #333;position:sticky;top:0;z-index:10}
+.top{display:flex;justify-content:space-between;align-items:center;padding:15px 5%;gap:15px;flex-wrap:wrap}
+.logo{font-size:30px;font-weight:900;font-style:italic;letter-spacing:-2px}
+.logo span{color:var(--red)}
+.contact{font-size:14px;color:#ddd}
+nav{display:flex;justify-content:center;gap:25px;padding:15px;flex-wrap:wrap;border-top:1px solid #222}
+nav a{font-size:13px;font-weight:bold}
+nav a:hover{color:var(--red)}
+.btn{display:inline-block;background:var(--red);color:white;padding:14px 22px;border-radius:5px;font-weight:bold;border:0}
+.btn:hover{background:#bd0711}
+.hero{min-height:490px;padding:75px 7%;display:flex;align-items:center;background:linear-gradient(90deg,#080808 0%,rgba(8,8,8,.92) 42%,rgba(8,8,8,.25)),url('https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?auto=format&fit=crop&w=1800&q=85') center/cover}
+.hero-content{max-width:650px}
+.eyebrow{color:var(--red);font-weight:bold;letter-spacing:3px}
+h1{font-size:clamp(38px,6vw,65px);line-height:1.03;margin:15px 0}
+h1 span{color:var(--red)}
+.hero p{font-size:19px;line-height:1.6;color:#ddd}
+.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:25px}
+.btn-outline{border:1px solid white;padding:13px 22px;border-radius:5px;font-weight:bold}
+.locations{margin-top:25px;color:#ccc;font-size:14px}
+section{padding:65px 6%}
+.section-title{text-align:center;margin-bottom:35px}
+.section-title h2{font-size:32px;text-transform:uppercase}
+.section-title h2 span{color:var(--red)}
+.section-title p{color:#aaa}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px}
+.service{background:#171717;border:1px solid #333;border-radius:9px;overflow:hidden;transition:.2s}
+.service:hover{border-color:var(--red);transform:translateY(-4px)}
+.service img{width:100%;height:165px;object-fit:cover}
+.service-content{padding:20px}
+.service h3{margin:0 0 10px;font-size:19px}
+.service p{color:#bbb;line-height:1.5;font-size:14px}
+.service a{color:#ff333d;font-size:13px;font-weight:bold}
+.motors{background:#131313}
+.motor-text{max-width:850px;margin:auto;text-align:center}
+.motor-text h2{font-size:36px}
+.motor-text h2 span{color:var(--red)}
+.motor-text p{color:#ccc;line-height:1.8}
+.tags{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;margin:25px 0}
+.tag{padding:10px 15px;border:1px solid #444;border-radius:5px;background:#202020}
+.tag strong{color:var(--red)}
+.benefits{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:20px;text-align:center}
+.benefit{padding:20px;border-bottom:2px solid var(--red)}
+.benefit h3{font-size:18px}
+.benefit p{color:#aaa;font-size:14px}
+.gallery-note{background:#171717;text-align:center;border-radius:10px;padding:35px}
+.cta{background:linear-gradient(110deg,#8e0008,#ed101d);text-align:center;padding:55px 20px}
+.cta h2{font-size:32px}
+.cta p{line-height:1.6}
+.cta .btn{background:white;color:#111;margin-top:12px}
+footer{padding:35px 6%;background:#050505;text-align:center;color:#aaa;font-size:13px;line-height:2}
+footer strong{color:white}
+.whatsapp{position:fixed;bottom:18px;right:18px;background:#19bb62;color:white;border-radius:35px;padding:14px 19px;font-weight:bold;z-index:20;box-shadow:0 3px 15px #000}
+@media(max-width:600px){
+.top{justify-content:center;text-align:center}
+.logo{font-size:27px}
+nav{gap:14px;padding:13px 5px}
+nav a{font-size:11px}
+.hero{min-height:470px;padding:55px 7%;background-position:60% center}
+.hero p{font-size:16px}
+section{padding:48px 5%}
+.section-title h2{font-size:26px}
+.motor-text h2{font-size:29px}
+}
+</style>
+</head>
+<body>
+
+<header>
+<div class="top">
+<a href="#" class="logo">Carbu<span>Cars</span></a>
+<div class="contact">📍 Torrevieja · Alicante | San Javier · Murcia</div>
+<div class="contact">WhatsApp: <strong>651 98 45 15</strong></div>
+</div>
+<nav>
+<a href="#inicio">INICIO</a>
+<a href="#servicios">SERVICIOS</a>
+<a href="#motores">MOTORES</a>
+<a href="#trabajos">TRABAJOS</a>
+<a href="#contacto">CONTACTO</a>
+</nav>
+</header>
+
+<main>
+<div class="hero" id="inicio">
+<div class="hero-content">
+<div class="eyebrow">CARBUCARS · AUTOMOTIVE SPECIALISTS</div>
+<h1>MECÁNICA,<br>TECNOLOGÍA Y <span>RENDIMIENTO.</span></h1>
+<p>Soluciones especializadas en reparación, reconstrucción de motores, mecánica y electrónica avanzada del automóvil.</p>
+<div class="actions">
+<a class="btn" href="#servicios">DESCUBRIR SERVICIOS →</a>
+<a class="btn-outline" href="https://wa.me/34651984515">CONTACTAR</a>
+</div>
+<div class="locations">TORREVIEJA · ALICANTE · SAN JAVIER · MURCIA</div>
+</div>
+</div>
+
+<section id="servicios">
+<div class="section-title">
+<div class="eyebrow">NUESTRO TRABAJO</div>
+<h2>NUESTRAS <span>ESPECIALIDADES</span></h2>
+<p>Experiencia, tecnología y soluciones para cada vehículo.</p>
+</div>
+<div class="grid">
+
+<article class="service">
+<img src="https://images.unsplash.com/photo-1487754180451-c456f719a1fc?auto=format&fit=crop&w=700&q=80" alt="Reparación de motores">
+<div class="service-content"><h3>Reparación de motores</h3><p>Reparación y reconstrucción integral de motores gasolina y diésel, de diferentes cilindradas y arquitecturas.</p><a href="#motores">MÁS INFORMACIÓN →</a></div>
+</article>
+
+<article class="service">
+<img src="https://images.unsplash.com/photo-1619767886558-efdc259cde1a?auto=format&fit=crop&w=700&q=80" alt="Capotas">
+<div class="service-content"><h3>Reparación de capotas</h3><p>Especialistas en sistemas de techo descapotable rígidos y de lona, eléctricos e hidráulicos.</p><a href="#contacto">CONSULTAR →</a></div>
+</article>
+
+<article class="service">
+<img src="https://images.unsplash.com/photo-1613214150384-8f3c5f6b7e5c?auto=format&fit=crop&w=700&q=80" alt="Suspensión">
+<div class="service-content"><h3>Suspensión neumática</h3><p>Reparación, montaje, programación y modificación de niveles de altura.</p><a href="#contacto">CONSULTAR →</a></div>
+</article>
+
+<article class="service">
+<img src="https://images.unsplash.com/photo-1635784063381-6c0e4e9c9a9d?auto=format&fit=crop&w=700&q=80" alt="Alternador">
+<div class="service-content"><h3>Alternadores</h3><p>Diagnóstico, reparación y reconstrucción de alternadores y motores de arranque.</p><a href="#contacto">CONSULTAR →</a></div>
+</article>
+
+<article class="service">
+<img src="https://images.unsplash.com/photo-1535223289827-42f1e9919769?auto=format&fit=crop&w=700&q=80" alt="Diagnosis electrónica">
+<div class="service-content"><h3>Diagnosis electrónica</h3><p>Diagnosis avanzada, codificación, programación y reprogramación de sistemas electrónicos.</p><a href="#contacto">CONSULTAR →</a></div>
+</article>
+
+<article class="service">
+<img src="https://images.unsplash.com/photo-1558981806-ec527fa84c39?auto=format&fit=crop&w=700&q=80" alt="Motocicletas">
+<div class="service-content"><h3>Motos y náutica</h3><p>Mecánica y mantenimiento especializado de motocicletas y motos de agua.</p><a href="#contacto">CONSULTAR →</a></div>
+</article>
+
+<article class="service">
+<img src="https://images.unsplash.com/photo-1552519507-da3b142c6e3d?auto=format&fit=crop&w=700&q=80" alt="Preparaciones">
+<div class="service-content"><h3>Preparaciones y rendimiento</h3><p>Instalación de turbos, compresores y otros sistemas de mejora de rendimiento.</p><a href="#contacto">CONSULTAR →</a></div>
+</article>
+
+<article class="service">
+<img src="https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?auto=format&fit=crop&w=700&q=80" alt="Mecánica general">
+<div class="service-content"><h3>Mecánica general</h3><p>Mantenimiento, reparación y soluciones mecánicas para diferentes marcas y modelos.</p><a href="#contacto">CONSULTAR →</a></div>
+</article>
+
+</div>
+</section>
+
+<section class="motors" id="motores">
+<div class="motor-text">
+<div class="eyebrow">ESPECIALISTAS EN MECÁNICA</div>
+<h2>RECONSTRUCCIÓN DE <span>MOTORES</span></h2>
+<p>Trabajamos con todo tipo de motores, desde mecánica convencional hasta mecánicas de altas prestaciones. Motores gasolina, diésel, atmosféricos, turboalimentados y rotativos.</p>
+<div class="tags">
+<div class="tag">3 y 4 <strong>cilindros</strong></div>
+<div class="tag">5 y 6 <strong>cilindros</strong></div>
+<div class="tag">8 <strong>cilindros</strong></div>
+<div class="tag">10 y 12 <strong>cilindros</strong></div>
+<div class="tag">Rotativos <strong>Wankel</strong></div>
+</div>
+<p>Reconstrucciones integrales, reparación de culatas y bloques, distribución y soluciones mecánicas. También motores Ingenium 2.0.</p>
+<a class="btn" href="https://wa.me/34651984515?text=Hola%20CarbuCars,%20quiero%20consultar%20por%20una%20reparacion%20de%20motor">CONSULTAR MI MOTOR</a>
+</div>
+</section>
+
+<section id="trabajos">
+<div class="section-title">
+<div class="eyebrow">CARBUCARS</div>
+<h2>TRABAJOS <span>REALIZADOS</span></h2>
+</div>
+<div class="gallery-note">
+<h3>Experiencia que se demuestra trabajando.</h3>
+<p>Próximamente mostraremos aquí fotografías y vídeos de nuestras reparaciones, reconstrucciones y proyectos.</p>
+</div>
+</section>
+
+<section>
+<div class="benefits">
+<div class="benefit"><h3>⚙ Especialización</h3><p>Soluciones para trabajos mecánicos complejos.</p></div>
+<div class="benefit"><h3>✓ Profesionalidad</h3><p>Diagnóstico y reparación con criterio técnico.</p></div>
+<div class="benefit"><h3>⌘ Tecnología</h3><p>Equipos de diagnosis y programación.</p></div>
+<div class="benefit"><h3>📍 Cobertura</h3><p>Alicante, Murcia y clientes de otras zonas.</p></div>
+</div>
+</section>
+
+<div class="cta" id="contacto">
+<h2>¿NECESITAS UNA SOLUCIÓN?</h2>
+<p>Cuéntanos qué necesita tu vehículo.<br>Estamos aquí para ayudarte.</p>
+<a class="btn" href="https://wa.me/34651984515?text=Hola%20CarbuCars,%20quiero%20solicitar%20informacion">CONTACTAR POR WHATSAPP</a>
+</div>
+</main>
+
+<footer>
+<strong>CARBUCARS</strong><br>
+Mecánica · Motores · Electrónica · Reprogramación<br>
+Torrevieja (Alicante) · San Javier (Murcia)<br>
+WhatsApp: 651 98 45 15<br>
+Instagram: @Carbucars<br>
+© 2026 CarbuCars. Todos los derechos reservados.
+</footer>
+
+<a class="whatsapp" href="https://wa.me/34651984515">☏ WHATSAPP</a>
+</body>
+</html>
